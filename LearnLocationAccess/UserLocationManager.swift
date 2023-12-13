@@ -23,12 +23,7 @@ final class UserLocationManager : NSObject, ObservableObject, CLLocationManagerD
         checkIfLocationServericesIsEnabled()
         startTracking()
     }
-    
-    func updateLocation(location: CLLocation){
-        addBreadCrumb(location: location)
-        currentCoordinate = location
-    }
-    
+        
     func startTracking(){
         guard let locationManager = locationManager else {
             return
@@ -43,8 +38,13 @@ final class UserLocationManager : NSObject, ObservableObject, CLLocationManagerD
         locationManager.stopUpdatingLocation()
     }
     
-    func addBreadCrumb(location: CLLocation)  {
+    private func addBreadCrumb(location: CLLocation)  {
         usersBreadCrumbs.append(location)
+    }
+    
+    private func updateLocation(location: CLLocation){
+        addBreadCrumb(location: location)
+        currentCoordinate = location
     }
 }
 
