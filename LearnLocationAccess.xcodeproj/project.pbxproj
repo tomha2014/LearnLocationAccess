@@ -14,6 +14,8 @@
 		02883BC72B27D7DB00466E10 /* LearnLocationAccessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02883BC62B27D7DB00466E10 /* LearnLocationAccessTests.swift */; };
 		02883BD12B27D7DB00466E10 /* LearnLocationAccessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02883BD02B27D7DB00466E10 /* LearnLocationAccessUITests.swift */; };
 		02883BD32B27D7DB00466E10 /* LearnLocationAccessUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02883BD22B27D7DB00466E10 /* LearnLocationAccessUITestsLaunchTests.swift */; };
+		02883BE02B27DAA900466E10 /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02883BDF2B27DAA900466E10 /* CLLocationCoordinate2D.swift */; };
+		02883BE22B27DD4A00466E10 /* UserLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02883BE12B27DD4A00466E10 /* UserLocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		02883BCC2B27D7DB00466E10 /* LearnLocationAccessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnLocationAccessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02883BD02B27D7DB00466E10 /* LearnLocationAccessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnLocationAccessUITests.swift; sourceTree = "<group>"; };
 		02883BD22B27D7DB00466E10 /* LearnLocationAccessUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnLocationAccessUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		02883BDF2B27DAA900466E10 /* CLLocationCoordinate2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationCoordinate2D.swift; sourceTree = "<group>"; };
+		02883BE12B27DD4A00466E10 /* UserLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +98,12 @@
 		02883BB42B27D7DA00466E10 /* LearnLocationAccess */ = {
 			isa = PBXGroup;
 			children = (
+				02883BDF2B27DAA900466E10 /* CLLocationCoordinate2D.swift */,
 				02883BB52B27D7DA00466E10 /* LearnLocationAccessApp.swift */,
 				02883BB72B27D7DA00466E10 /* ContentView.swift */,
 				02883BB92B27D7DB00466E10 /* Assets.xcassets */,
 				02883BBB2B27D7DB00466E10 /* Preview Content */,
+				02883BE12B27DD4A00466E10 /* UserLocationManager.swift */,
 			);
 			path = LearnLocationAccess;
 			sourceTree = "<group>";
@@ -259,6 +265,8 @@
 			files = (
 				02883BB82B27D7DA00466E10 /* ContentView.swift in Sources */,
 				02883BB62B27D7DA00466E10 /* LearnLocationAccessApp.swift in Sources */,
+				02883BE02B27DAA900466E10 /* CLLocationCoordinate2D.swift in Sources */,
+				02883BE22B27DD4A00466E10 /* UserLocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +433,8 @@
 				DEVELOPMENT_TEAM = K6449ZUDL7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "please let me know your location when in use.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "please share your location with me";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +464,8 @@
 				DEVELOPMENT_TEAM = K6449ZUDL7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "please let me know your location when in use.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "please share your location with me";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
